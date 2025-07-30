@@ -17,7 +17,7 @@ const TestContextComponent = () => {
 
 export default function App() {
   return (
-    <ToolkitTenantProvider runtimeUrl="http://127.0.0.1:4000/api/chat">
+    <ToolkitTenantProvider runtimeUrl="http://127.0.0.1:4000/api/chat" baseApiUrl="http://127.0.0.1:4000/api">
       <TestContextComponent />
       <ChatPage onSubmitMessage={() => {}} user={{ id: "consumer" }} tools={
         <>
